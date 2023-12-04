@@ -22,8 +22,8 @@
         </select>
 
         <!-- Campo de input numérico -->
-        <label for="inputNumber">Número:</label>
-        <input type="number" id="inputNumber" v-model="inputNumber">
+        <label>Número:</label>
+        <input type="number" id="valor" v-model="inputNumber">
 
         <!-- Botão -->
         <button @click="add">adicionar</button>
@@ -31,7 +31,7 @@
         <button @click="misturar">Misturar</button>
 
         <!-- Lista -->
-        <ul>
+        <ul id="valores">
             <li>A</li>
             <li>B</li>
             <li>C</li>
