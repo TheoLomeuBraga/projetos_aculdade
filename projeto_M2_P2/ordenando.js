@@ -8,11 +8,11 @@ new Vue({
       simulationResult: null,
 
       numeros: [],
-      valor: 0
+      valor: 0,
+      algoritimo_selecionado: "",
     },
     methods: {
       add: function() {
-        console.log(this.valor)
         if (this.valor) {
           this.numeros.push(Number(this.valor));
           this.valor = null;
@@ -20,6 +20,12 @@ new Vue({
       },
       simulateAlgorithm: function() {
         // ... (lógica de simulação)
-      }
+      },
+      ordenar: function() {
+
+      },
+      misturar: function() {
+
+      },
     }
   });
