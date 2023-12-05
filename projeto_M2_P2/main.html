@@ -12,21 +12,22 @@
 <body>
 
     <div id="app">
-        <h2>Escolha um Algoritmo de Ordenação:</h2>
+        
 
+        <!-- Campo de input numérico -->
+        <label>Número:</label>
+        <input type="number" id="valor" v-model="inputNumber">
+        <button @click="add">adicionar</button>
+
+        <p></p>
+
+        <label>Escolha um Algoritmo de Ordenação:</label>
         <!-- Campo de seleção -->
         <select v-model="selectedAlgorithm">
             <option value="bubble">Bubble Sort</option>
             <option value="selection">Selection Sort</option>
             <option value="quick">Quick Sort</option>
         </select>
-
-        <!-- Campo de input numérico -->
-        <label>Número:</label>
-        <input type="number" id="valor" v-model="inputNumber">
-
-        <!-- Botão -->
-        <button @click="add">adicionar</button>
         <button @click="ordenar">Ordenar</button>
         <button @click="misturar">Misturar</button>
 
